@@ -109,22 +109,22 @@ const About = () => {
         </motion.p>
         </div>
         
-        <div className="flex items-center justify-center mt-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="bg-darkBlue/30 backdrop-blur-sm p-6 rounded-xl card-glow"
-          >
-            <div className="mb-4">{features[0].icon}</div>
-            <h4 className="font-orbitron text-xl font-bold mb-2">{features[0].title}</h4>
-            <p className="text-gray-300">{features[0].description}</p>
-          </motion.div>
-          <br />
-        <div className="px-6 py-4 bg-darkBlue/50 flex justify-between items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-16 justify-center">
+          {features.map((feature, index) => (
+            <motion.div
+              key={feature.title}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+              className="bg-darkBlue/30 backdrop-blur-sm p-6 rounded-xl card-glow mx-auto"
+            >
+              <div className="mb-4 flex justify-center">{feature.icon}</div>
+              <h4 className="font-orbitron text-xl font-bold mb-2 text-center">{feature.title}</h4>
+              <p className="text-gray-300 text-center">{feature.description}</p>
+              <div className="mt-6 flex justify-center">
                 <a 
-                  href={features[0].link}
-                  target='_blank' 
+                  href={feature.link}
+                  target='_blank'
                   className="btn-primary inline-flex items-center text-white bg-accent-cyan hover:bg-accent-cyan/80 transition-all duration-300 py-3 px-6 rounded-md text-xl"
                 >
                   Register Now 
@@ -133,6 +133,8 @@ const About = () => {
                   </svg>
                 </a>
               </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
