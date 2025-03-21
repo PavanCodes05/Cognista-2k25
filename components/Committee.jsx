@@ -37,7 +37,7 @@ const committeeMembers = [
       },
       {
         name: "Mr. M.A Harinesh",
-        role: "Secretary",
+        role: "Secretary, Astroz Association",
         contact: "+91 9361943978",
         image: "/assets/Harinesh.jpg"
       },
