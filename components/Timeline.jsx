@@ -26,7 +26,7 @@ const timelineEvents = [
   {
     date: "March 29, 2025",
     title: "Main Events",
-    description: "At 10.00 PM Competitions, workshops, and technical sessions action-packed day."
+    description: "At 10.00 AM Competitions, workshops, and technical sessions action-packed day."
   },
   {
     date: "March 29, 2025",

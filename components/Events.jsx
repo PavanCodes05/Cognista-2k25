@@ -45,7 +45,7 @@ const events = [
     icon: <FaCamera size={36} className="text-accent-cyan transition-transform duration-300 transform hover:scale-110" />,
     title: "Lens Legacy",
     description: "Photography Event.",
-    link: "https://forms.gle/ULKy69aq9S23iXYa6",
+    link: "https://forms.gle/kUhr7Vj47aKLMpqN8",
     teamSize: "Individual",
     categories: ["Photographs", "Capture Moments"]
   },
