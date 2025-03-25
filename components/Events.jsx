@@ -116,20 +116,21 @@ const Events = () => {
                 </div>
                 
               </div>
-              <div className="px-6 py-4 bg-darkBlue/50 flex justify-between items-center">
-                <a 
-                  href={event.link}
-                  target='_blank' 
-                  className="btn-primary inline-flex items-center text-white bg-accent-cyan hover:bg-accent-cyan/80 transition-all duration-300 py-3 px-6 rounded-md text-xl"
-                >
-                  Register Now 
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="px-6 py-4 bg-darkBlue/50 flex justify-center items-center">
+            <a 
+              href="https://forms.gle/PPHnUP1XY13jPZ7S7"
+              target='_blank' 
+              className="btn-primary inline-flex items-center text-white bg-accent-cyan hover:bg-accent-cyan/80 transition-all duration-300 py-3 px-6 rounded-md text-xl"
+            >
+              Register Now 
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
         </div>
         
         <motion.div
