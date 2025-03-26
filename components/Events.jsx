@@ -68,7 +68,18 @@ const Events = () => {
 
   return (
     <section id="events" className="section-padding bg-darkBlue-800" ref={ref}>
+
       <div className="container mx-auto px-4">
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="text-center text-yellow-500 font-bold mb-12 sm:mb-16"
+      >
+        For Team Participation, Each Individual Participant Must Register!
+      </motion.p>
+        
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
