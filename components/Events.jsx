@@ -74,9 +74,18 @@ const Events = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-center text-yellow-500 font-bold mb-12 sm:mb-16"
+        className="text-center text-yellow-500 font-bold"
       >
         For Team Participation, Each Individual Participant Must Register!
+      </motion.p>
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="text-center text-yellow-500 font-bold mb-12 sm:mb-16"
+      >
+        Participants Are Asked To Bring Their Own Laptops For <span className='text-red-500'>Aesthetic Arc, Bug Bounty and Data Dive.</span>
       </motion.p>
         
 
